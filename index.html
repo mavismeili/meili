@@ -20,17 +20,19 @@
 <link rel="stylesheet" href="assets/plugins/bootstrap/dist/css/bootstrap.min.css" />
 <link rel="stylesheet" href="assets/plugins/animate.css/animate.min.css" />
 <link rel="stylesheet" href="assets/plugins/slick-carousel/slick/slick.css" />
+<link rel='stylesheet' href="assets/plugins/fullcalendar/dist/fullcalendar.min.css" />
+<link rel="stylesheet" href="assets/plugins/fullpage.js/dist/jquery.fullpage.min.css" />
 
 <!-- CSS Icons -->
 <link rel="stylesheet" href="assets/css/themify-icons.css" />
 <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css" />
 
 <!-- CSS Base -->
-<link id="theme" rel="stylesheet" href="assets/css/themes/theme-blue.min.css" />
+<link id="theme" rel="stylesheet" href="assets/css/themes/theme-red.min.css" />
 
 </head>
 
-<body class="navigation-panel page-scrolling">
+<body class="navigation-panel page-sliding dark-scheme">
 
 <!-- Loader -->
 <div id="page-loader">
@@ -45,12 +47,12 @@
     <div class="navigation-inner">
         <!-- Navigation Primary -->
         <ul class="nav nav-primary-panel">
-            <li class="nav-item"><a href="index-developer-panel-scroll.html#start" class="nav-link">Start</a></li>
-            <li class="nav-item"><a href="index-developer-panel-scroll.html#resume" class="nav-link">Resume</a></li>
-            <li class="nav-item"><a href="index-developer-panel-scroll.html#services" class="nav-link">Services</a></li>
-            <li class="nav-item"><a href="index-developer-panel-scroll.html#portfolio" class="nav-link">Portfolio</a></li>
-            <li class="nav-item"><a href="index-developer-panel-scroll.html#blog" class="nav-link">Latest Posts</a></li>
-            <li class="nav-item"><a href="index-developer-panel-scroll.html#contact" class="nav-link">Contact</a></li>
+            <li data-menuanchor="start" class="nav-item"><a href="#start" class="nav-link">Start</a></li>
+            <li data-menuanchor="resume" class="nav-item"><a href="#resume" class="nav-link">Resume</a></li>
+            <li data-menuanchor="services" class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+            <li data-menuanchor="projects" class="nav-item"><a href="#portfolio" class="nav-link">Projects</a></li>
+            <li data-menuanchor="calendar" class="nav-item"><a href="#calendar" class="nav-link">Calendar</a></li>
+            <li data-menuanchor="contact" class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
     </div>
     
@@ -61,461 +63,25 @@
 <a id="navigation-toggle" class="nav-toggle"><span></span><span></span><span></span><span></span></a>
 
 <!-- Content -->
-<div id="content" data-scheme="dark">
+<div id="content">
 
-    <!-- Section - Intro -->
-    <section id="intro" class="section dark bg-dark" data-scheme="dark">
-
-        <!-- BG Image -->
-        <div class="bg-image-container"><img src="assets/img/intro-bg.jpg" alt=""></div>
-    
-        <!-- Section Content -->
-        <div class="section-content" data-local-scroll>
-            <div class="container">
-
-                <div class="row image-edge image-edge-close text-center">
-                    <div class="col-md-8 push-md-2">
-                        <h6 class="mb-2"><span class="typing">Hello, I am Ja!</span></h6>
-                        <hr class="sep-oval">
-                        <h1><span class="text-primary">Advanced</span> Personal Resume / CV vCard Template</h1>
-                        <a href="#configurator" class="btn btn-primary">Set your concept!</a><a href="#features" class="btn btn-link">Check features</a>
-                        <div class="mt-5 text-xs text-muted text-center"><span class="mr-3"><a href="documentation/index.html" target="_blank" class="link-inherit">Documentation</a> by</span><a href="http://www.papear.online" target="_blank"><img src="documentation/papear/img/papear-logo-light.svg" width="70" alt=""></a></div>
-                    </div>
-                </div>
-
-            </div>
+    <!-- Section - Start -->
+    <section id="section-start" data-anchor="start" class="section section-double fullheight dark bg-primary-animated" data-scheme="dark" data-local-scroll>
+        
+        <!-- Section Image -->
+        <div class="section-image col-md-6">
+            <div class="bg-image-container"><img src="assets/img/photos/coach/home-alternative.jpg" alt=""></div>
         </div>
 
-    </section>
-
-    <!-- Section - Configurator -->
-    <section id="configurator" class="section pt-5" data-scheme="light">
-    
         <!-- Section Content -->
-        <div class="section-content" data-local-scroll>
-            <div class="container">
-                <h6 class="text-center text-uppercase text-muted text-xs mb-5">Set your configuration</h6>
-                <div class="chooser-configuration row row-with-sep text-center">
-                    <div class="col-md-6">
-                        <h5>Section transition:</h5>
-                        <div class="configuration-settings">
-                            <!-- Configuration Item -->
-                            <div class="configuration-setting active" data-configuration-type="transition" data-configuration-value="scroll">
-                                <svg viewBox="0 0 63 45" class="configuration-icon icon-scrolling">
-                                    <rect class="icon-browser" fill="transparent" stroke-width="2" x="1" y="1" width="60.5576172" height="42.3974515" rx="6"></rect>
-                                    <g class="icon-body">
-                                        <g class="icon-section">
-                                            <rect class="icon-image" x="5" y="23.0693089" width="25.3828125" height="16.0660381" rx="3"></rect>
-                                            <rect class="icon-image" x="5" y="4.31738281" width="53.5361328" height="16.0660381" rx="3"></rect>
-                                            <g class="icon-text" transform="translate(34.000000, 24.000000)">
-                                                <rect x="0" y="0" width="12.8823242" height="2" rx="1"></rect>
-                                                <rect x="0" y="8" width="11.3334961" height="2" rx="1"></rect>
-                                                <rect x="0" y="4" width="16.4770508" height="2" rx="1"></rect>
-                                                <rect x="0" y="12" width="16.4770508" height="2" rx="1"></rect>
-                                            </g>
-                                        </g>
-                                        <g class="icon-section" transform="translate(0, 45)">
-                                            <rect class="icon-image" x="5" y="23.0693089" width="25.3828125" height="16.0660381" rx="3"></rect>
-                                            <rect class="icon-image" x="5" y="4.31738281" width="53.5361328" height="16.0660381" rx="3"></rect>
-                                            <g class="icon-text" transform="translate(34.000000, 24.000000)">
-                                                <rect x="0" y="0" width="12.8823242" height="2" rx="1"></rect>
-                                                <rect x="0" y="8" width="11.3334961" height="2" rx="1"></rect>
-                                                <rect x="0" y="4" width="16.4770508" height="2" rx="1"></rect>
-                                                <rect x="0" y="12" width="16.4770508" height="2" rx="1"></rect>
-                                            </g>
-                                        </g>
-                                    </g>
-                                </svg>
-                                <h5 class="configuration-name">Scroll</h5>
-                            </div>
-                            <!-- Configuration Item -->
-                            <div class="configuration-setting" data-configuration-type="transition" data-configuration-value="slide">
-                                <svg viewBox="0 0 63 45" class="configuration-icon icon-sliding">
-                                    <rect class="icon-browser" fill="transparent" stroke-width="2" x="1" y="1" width="60.5576172" height="42.3974515" rx="6"></rect>
-                                    <g class="icon-body">
-                                        <g class="icon-section">
-                                            <rect class="icon-image" x="5" y="23.0693089" width="25.3828125" height="16.0660381" rx="3"></rect>
-                                            <rect class="icon-image" x="5" y="4.31738281" width="53.5361328" height="16.0660381" rx="3"></rect>
-                                            <g class="icon-text" transform="translate(34.000000, 24.000000)">
-                                                <rect x="0" y="0" width="12.8823242" height="2" rx="1"></rect>
-                                                <rect x="0" y="8" width="11.3334961" height="2" rx="1"></rect>
-                                                <rect x="0" y="4" width="16.4770508" height="2" rx="1"></rect>
-                                                <rect x="0" y="12" width="16.4770508" height="2" rx="1"></rect>
-                                            </g>
-                                        </g>
-                                        <g class="icon-section" transform="translate(0, 45)">
-                                            <rect class="icon-image" x="5" y="23.0693089" width="25.3828125" height="16.0660381" rx="3"></rect>
-                                            <rect class="icon-image" x="5" y="4.31738281" width="53.5361328" height="16.0660381" rx="3"></rect>
-                                            <g class="icon-text" transform="translate(34.000000, 24.000000)">
-                                                <rect x="0" y="0" width="12.8823242" height="2" rx="1"></rect>
-                                                <rect x="0" y="8" width="11.3334961" height="2" rx="1"></rect>
-                                                <rect x="0" y="4" width="16.4770508" height="2" rx="1"></rect>
-                                                <rect x="0" y="12" width="16.4770508" height="2" rx="1"></rect>
-                                            </g>
-                                        </g>
-                                    </g>
-                                </svg>
-                                <h5 class="configuration-name">Slide</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <h5>Navigation type:</h5>
-                        <div class="configuration-settings">
-                            <!-- Configuration Item -->
-                            <div class="configuration-setting active" data-configuration-type="navigation" data-configuration-value="panel">
-                                <svg viewBox="0 0 63 45" class="configuration-icon icon-scrolling">
-                                    <rect class="icon-browser" fill="transparent" stroke-width="2" x="1" y="1" width="60.5576172" height="42.3974515" rx="6"></rect>
-                                    <g transform="translate(38.000000, 13.000000)">
-                                        <rect x="4" y="0" width="12.8823242" height="2" rx="1"></rect>
-                                        <rect x="4" y="16" width="12.8823242" height="2" rx="1"></rect>
-                                        <rect x="5.54882812" y="8" width="11.3334961" height="2" rx="1"></rect>
-                                        <rect x="0" y="4" width="16.4770508" height="2" rx="1"></rect>
-                                        <rect x="0" y="12" width="16.4770508" height="2" rx="1"></rect>
-                                    </g>
-                                </svg>
-                                <h5 class="configuration-name">Panel</h5>
-                            </div>
-                            <!-- Configuration Item -->
-                            <div class="configuration-setting" data-configuration-type="navigation" data-configuration-value="vertical">
-                                <svg viewBox="0 0 63 45" class="configuration-icon icon-scrolling">
-                                    <rect class="icon-browser" fill="transparent" stroke-width="2" x="1" y="1" width="60.5576172" height="42.3974515" rx="6"></rect>
-                                    <rect class="icon-nav" x="4" y="4" width="13.3960929" height="35.3340728" rx="3"></rect>
-                                </svg>
-                                <h5 class="configuration-name">Vertical</h5>
-                            </div>
-                            <!-- Configuration Item -->
-                            <div class="configuration-setting" data-configuration-type="navigation" data-configuration-value="horizontal">
-                                <svg viewBox="0 0 63 45" class="configuration-icon icon-scrolling">
-                                    <rect class="icon-browser" fill="transparent" stroke-width="2" x="1" y="1" width="60.5576172" height="42.3974515" rx="6"></rect>
-                                    <rect class="icon-nav" x="4" y="4" width="54.0966797" height="6.41894531" rx="3"></rect>
-                                </svg>
-                                <h5 class="configuration-name">Horizontal</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <!-- Section - Chooser -->
-    <section id="chooser" class="section bg-light pt-5" data-scheme="light">
-    
-        <!-- Section Content -->
-        <div class="section-content" data-local-scroll>
-            <div class="container">
-                <div class="row align-items-center gutters-lg">
-                    <div class="col-lg-6">
-                        <!-- Image Box -->
-                        <div class="configuration-image-box image-box mb-lg-0">
-                            <div class="configuration-images">
-                                <a href="index-designer-panel-scroll.html" data-navigation="panel" class="active" target="_blank"><img src="assets/img/screens/designer-panel.jpg" alt=""></a>
-                                <a href="index-designer-vertical-scroll.html" data-navigation="vertical" target="_blank"><img src="assets/img/screens/designer-vertical.jpg" alt=""></a>
-                                <a href="index-designer-horizontal-scroll.html" data-navigation="horizontal" target="_blank"><img src="assets/img/screens/designer-horizontal.jpg" alt=""></a>
-                                <span class="dots"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <p class="mb-2"><span class="badge badge-info">New!</span></p>
-                        <h3 class="title mb-0">Designer</h3>
-                        <p class="text-muted mb-4">Designed for Everyone.</p>
-                        <ul class="list-features text-sm">
-                            <li><i class="fa fa-header"></i>Classic Headings</li>
-                            <li><i class="fa fa-genderless"></i>Minimalistic Design</li>
-                            <li><i class="fa fa-camera"></i>Ajax Case Studies</li>
-                            <li><i class="fa fa-bookmark-o"></i>Impressive Services</li>
-                        </ul>   
-                    </div>
-                </div>
-                <hr class="hr-lg">
-                <div class="row align-items-center gutters-lg">
-                    <div class="col-lg-6 push-lg-6">
-                        <!-- Image Box -->
-                        <div class="configuration-image-box image-box mb-lg-0">
-                            <div class="configuration-images">
-                                <a href="index-developer-panel-scroll.html" data-navigation="panel" class="active" target="_blank"><img src="assets/img/screens/developer-panel.jpg" alt=""></a>
-                                <a href="index-developer-vertical-scroll.html" data-navigation="vertical" target="_blank"><img src="assets/img/screens/developer-vertical.jpg" alt=""></a>
-                                <a href="index-developer-horizontal-scroll.html" data-navigation="horizontal" target="_blank"><img src="assets/img/screens/developer-horizontal.jpg" alt=""></a>
-                                <span class="dots"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 pull-lg-6">
-                        <h3 class="title mb-0">Developer</h3>
-                        <p class="text-muted mb-4">Designed for Designers, Programmers and Corporate jobs.</p>
-                        <ul class="list-features text-sm">
-                            <li><i class="fa fa-sliders"></i>Isotope Filtering</li>
-                            <li><i class="fa fa-picture-o"></i>Ajax Porftolio</li>
-                            <li><i class="fa fa-circle-o"></i>SVG Pointers</li>
-                            <li><i class="fa fa-laptop"></i>Animated Gradients</li>
-                        </ul>   
-                    </div>
-                </div>
-                <hr class="hr-lg">
-                <div class="row align-items-center gutters-lg">
-                    <div class="col-lg-6">
-                        <!-- Image Box -->
-                        <div class="configuration-image-box image-box mb-lg-0">
-                            <div class="configuration-images">
-                                <a href="index-recruiter-panel-scroll.html" data-navigation="panel" class="active" target="_blank"><img src="assets/img/screens/recruiter-panel.jpg" alt=""></a>
-                                <a href="index-recruiter-vertical-scroll.html" data-navigation="vertical" target="_blank"><img src="assets/img/screens/recruiter-vertical.jpg" alt=""></a>
-                                <a href="index-recruiter-horizontal-scroll.html" data-navigation="horizontal" target="_blank"><img src="assets/img/screens/recruiter-horizontal.jpg" alt=""></a>
-                                <span class="dots"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <p class="mb-2"><span class="badge badge-info">New!</span></p>
-                        <h3 class="title mb-0">Recruiter</h3>
-                        <p class="text-muted mb-4">Designed for Recruters and Corporate jobs.</p>
-                        <ul class="list-features text-sm">
-                            <li><i class="fa fa-header"></i>Classic Headings</li>
-                            <li><i class="fa fa-genderless"></i>Minimalistic Design</li>
-                            <li><i class="fa fa-mouse-pointer"></i>Mouse Parallax</li>
-                        </ul>   
-                    </div>
-                </div>
-                <hr class="hr-lg">
-                <div class="row align-items-center gutters-lg">
-                    <div class="col-lg-6 push-lg-6">
-                        <!-- Image Box -->
-                        <div class="configuration-image-box image-box mb-lg-0">
-                            <div class="configuration-images">
-                                <a href="index-doctor-panel-scroll.html" data-navigation="panel" class="active" target="_blank"><img src="assets/img/screens/doctor-panel.jpg" alt=""></a>
-                                <a href="index-doctor-vertical-scroll.html" data-navigation="vertical" target="_blank"><img src="assets/img/screens/doctor-vertical.jpg" alt=""></a>
-                                <a href="index-doctor-horizontal-scroll.html" data-navigation="horizontal" target="_blank"><img src="assets/img/screens/doctor-horizontal.jpg" alt=""></a>
-                                <span class="dots"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 pull-lg-6">
-                        <h3 class="title mb-0">Doctor</h3>
-                        <p class="text-muted mb-4">Designed for Docotrs, Nurses and Psychologist.</p>
-                        <ul class="list-features text-sm">
-                            <li><i class="fa fa-mouse-pointer"></i>Mouse Parallax</li>
-                            <li><i class="fa fa-clock-o"></i>Schedule Component</li>
-                            <li><i class="fa fa-camera"></i>Ajax Case Studies</li>
-                        </ul>   
-                    </div>
-                </div>
-                <hr class="hr-lg">
-                <div class="row align-items-center gutters-lg">
-                    <div class="col-lg-6">
-                        <!-- Image Box -->
-                        <div class="configuration-image-box image-box mg-lg-0">
-                            <div class="configuration-images">                                
-                                <a href="index-coach-panel-scroll.html" data-navigation="panel" class="active" target="_blank"><img src="assets/img/screens/coach-panel.jpg" alt=""></a>
-                                <a href="index-coach-vertical-scroll.html" data-navigation="vertical" target="_blank"><img src="assets/img/screens/coach-vertical.jpg" alt=""></a>
-                                <a href="index-coach-horizontal-scroll.html" data-navigation="horizontal" target="_blank"><img src="assets/img/screens/coach-horizontal.jpg" alt=""></a>
-                                <span class="dots"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <h3 class="title mb-0">Coach</h3>
-                        <p class="text-muted mb-4">Designed for coaches.</p>
-                        <ul class="list-features text-sm">
-                            <li><i class="fa fa-calendar"></i>Google Calendar</li>
-                            <li><i class="fa fa-picture-o"></i>Ajax Case Studies</li>
-                            <li><i class="fa fa-laptop"></i>Animated Gradients</li>
-                        </ul>   
-                    </div>
-                </div>
-                <hr class="hr-lg">
-                <div class="row align-items-center gutters-lg">
-                    <div class="col-lg-6 push-lg-5">
-                        <!-- Image Box -->
-                        <div class="configuration-image-box image-box mg-lg-0">
-                            <div class="configuration-images">                                
-                                <a href="index-lawyer-panel-scroll.html" data-navigation="panel" class="active" target="_blank"><img src="assets/img/screens/lawyer-panel.jpg" alt=""></a>
-                                <a href="index-lawyer-vertical-scroll.html" data-navigation="vertical" target="_blank"><img src="assets/img/screens/lawyer-vertical.jpg" alt=""></a>
-                                <a href="index-lawyer-horizontal-scroll.html" data-navigation="horizontal" target="_blank"><img src="assets/img/screens/lawyer-horizontal.jpg" alt=""></a>
-                                <span class="dots"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 pull-lg-6">
-                        <h3 class="title mb-0">Lawyer</h3>
-                        <p class="text-muted mb-4">Designed for Lawyers and Solicitiors.</p>
-                        <ul class="list-features text-sm">
-                            <li><i class="fa fa-bookmark-o"></i>Simple Services</li>
-                            <li><i class="fa fa-tablet"></i>Neat Case Studies</li>
-                            <li><i class="fa fa-circle-o"></i>SVG Pointers</li>
-                        </ul>    
-                    </div>
-                </div>
-                <hr class="hr-lg">
-                <div class="row align-items-center gutters-lg">
-                    <div class="col-lg-6">
-                        <!-- Image Box -->
-                        <div class="configuration-image-box image-box mg-lg-0">
-                            <div class="configuration-images">                                
-                                <a href="index-architect-panel-scroll.html" data-navigation="panel" class="active" target="_blank"><img src="assets/img/screens/architect-panel.jpg" alt=""></a>
-                                <a href="index-architect-vertical-scroll.html" data-navigation="vertical" target="_blank"><img src="assets/img/screens/architect-vertical.jpg" alt=""></a>
-                                <a href="index-architect-horizontal-scroll.html" data-navigation="horizontal" target="_blank"><img src="assets/img/screens/architect-horizontal.jpg" alt=""></a>
-                                <span class="dots"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <h3 class="title mb-0">Architect</h3>
-                        <p class="text-muted mb-4">Designed for Designers, Programmers and Corporate jobs.</p>
-                        <ul class="list-features text-sm">
-                            <li><i class="fa fa-desktop"></i>Background Slideshow</li>
-                            <li><i class="fa fa-arrows-h"></i>Parallax Effects</li>
-                            <li><i class="fa fa-credit-card"></i>Pricing Tables</li>
-                            <li><i class="fa fa-laptop"></i>Animated Gradients</li>
-                        </ul>   
-                    </div>
-                </div>
-                <hr class="hr-lg">
-                <div class="row align-items-center gutters-lg">
-                    <div class="col-lg-6 push-lg-6">
-                        <!-- Image Box -->
-                        <div class="configuration-image-box image-box mg-lg-0">
-                            <div class="configuration-images">                                
-                                <a href="index-manager-panel-scroll.html" data-navigation="panel" class="active" target="_blank"><img src="assets/img/screens/manager-panel.jpg" alt=""></a>
-                                <a href="index-manager-vertical-scroll.html" data-navigation="vertical" target="_blank"><img src="assets/img/screens/manager-vertical.jpg" alt=""></a>
-                                <a href="index-manager-horizontal-scroll.html" data-navigation="horizontal" target="_blank"><img src="assets/img/screens/manager-horizontal.jpg" alt=""></a>
-                                <span class="dots"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 pull-lg-6">
-                        <h3 class="title mb-0">Managers</h3>
-                        <p class="text-muted mb-4">Designed for Managers, but also Designers and Developers.</p>
-                        <ul class="list-features text-sm">
-                            <li><i class="fa fa-file-photo-o"></i>No Photo Version</li>
-                            <li><i class="fa fa-circle-o"></i>SVG Pointers</li>
-                            <li><i class="fa fa-laptop"></i>Animated Gradients</li>
-                            <li><i class="fa fa-credit-card"></i>Pricing Tables</li>
-                        </ul>     
-                    </div>
-                </div>
-                <hr class="hr-lg">
-                <div class="row align-items-center gutters-lg">
-                    <div class="col-lg-6">
-                        <!-- Image Box -->
-                        <div class="configuration-image-box image-box mg-lg-0">
-                            <div class="configuration-images">                                
-                                <a href="index-trainer-panel-scroll.html" data-navigation="panel" class="active" target="_blank"><img src="assets/img/screens/trainer-panel.jpg" alt=""></a>
-                                <a href="index-trainer-vertical-scroll.html" data-navigation="vertical" target="_blank"><img src="assets/img/screens/trainer-vertical.jpg" alt=""></a>
-                                <a href="index-trainer-horizontal-scroll.html" data-navigation="horizontal" target="_blank"><img src="assets/img/screens/trainer-horizontal.jpg" alt=""></a>
-                                <span class="dots"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <h3 class="title mb-0">Trainer</h3>
-                        <p class="text-muted mb-4">Designed for Trainers and Coaches.</p>
-                        <ul class="list-features text-sm">
-                            <li><i class="fa fa-file-video-o"></i>Background Video</li>
-                            <li><i class="fa fa-circle-o"></i>SVG Pointers</li>
-                            <li><i class="fa fa-code"></i>Neat Services</li>
-                        </ul>   
-                    </div>
-                </div>
-                <hr class="hr-lg">
-                <div class="row align-items-center gutters-lg">
-                    <div class="col-lg-6 push-lg-6">
-                        <!-- Image Box -->
-                        <div class="configuration-image-box configuration-blog image-box mg-lg-0">
-                            <div class="configuration-images">
-                                <a href="blog-panel.html" data-navigation="panel" class="active" target="_blank"><img src="assets/img/screens/blog-panel.jpg" alt=""></a>
-                                <a href="blog-vertical.html" data-navigation="vertical" target="_blank"><img src="assets/img/screens/blog-vertical.jpg" alt=""></a>
-                                <a href="blog-horizontal.html" data-navigation="horizontal" target="_blank"><img src="assets/img/screens/blog-horizontal.jpg" alt=""></a>
-                                <span class="dots"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 pull-lg-6">
-                        <h3 class="title mb-0">Blog</h3>
-                        <p class="text-muted mb-4">Neat and modern personal blog page.</p>
-                        <ul class="list-features text-sm">
-                            <li><i class="fa fa-file-photo-o"></i>Modern Design</li>
-                            <li><i class="fa fa-sliders"></i>Isotope Filtering</li>
-                            <li><i class="fa fa-circle-o"></i>SVG Effects</li>
-                        </ul>     
-                    </div>
-                </div>
-                <hr class="hr-lg">
-                <div class="text-center">
-                    <h6>
-                    <svg class="loader mr-4" viewBox="0 0 28 28">
-                        <circle cx="14" cy="14" r="12" stroke-width="2"></circle>
-                    </svg>More cooming soon!</h6>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <!-- Section - Features -->
-    <section id="features" class="section section-lg dark bg-dark" data-scheme="dark">
-
-        <!-- Section Content -->
-        <div class="section-content" data-local-scroll>
-            <div class="container image-edge image-edge-close"> 
-                <div class="row">
-                    <div class="col-xl-5 col-md-6">
-                        <!-- Content -->
-                        <h1>Tons of options &amp; components</h1>
-                        <p class="lead text-muted">Pick your own sections transition and navigation type.</p>
-                        <a href="#configurator" class="btn btn-primary">Set your concept!</a>
-                        <!-- Image -->
-                        <div class="image right">
-                            <img src="assets/img/chooser/options.jpg" alt="" class="animated" data-animation="fadeInRight">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <!-- Section - Feature-->
-    <section class="section section-lg" data-scheme="light">
-
-        <!-- Section Content -->
-        <div class="section-contentr" data-local-scroll>
-            <div class="container image-edge image-edge-close"> 
-                <div class="row">
-                    <div class="col-xl-5 push-xl-7 col-md-6 push-md-5">
-                        <!-- Content -->
-                        <h1>Neat resume section</h1>
-                        <p class="lead text-muted">Present you skills and experience in the best possible way.</p>
-                        <a href="#chooser" class="btn btn-primary">Try it!</a>
-                        <!-- Image -->
-                        <div class="image left">
-                            <img src="assets/img/chooser/resume.jpg" alt="" class="animated" data-animation="fadeInLeft">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <!-- Section - Feature -->
-    <section class="section section-lg dark bg-primary" data-scheme="dark">
-
-        <!-- Section Content -->
-        <div class="section-content" data-local-scroll>
-            <div class="container image-edge image-edge-close"> 
+        <div class="section-content pos-v-center">
+            <div class="container-wide" data-local-scroll>
                 <div class="row align-items-center">
-                    <div class="col-xl-5 col-md-6">
-                        <!-- Content -->
-                        <h1>Lazy Loading</h1>
-                        <p class="lead text-muted">Effective and fast wesbite loading.</p>
-                        <a href="#configurator" class="btn btn-white">Set your concept!</a>
-                    </div>
-                    <div class="col-xl-7 col-md-6 text-center">
-                        <svg class="loader loader-white loader-xl" viewBox="0 0 28 28">
-                            <circle cx="14" cy="14" r="12" stroke-width="2"></circle>
-                        </svg>
+                    <div class="col-md-5 push-md-7">
+                        <img src="assets/img/logo-light.svg" class="home-logo home-logo-sm animated" data-animation="fadeIn" alt="">
+                        <h1 class="display-3 mb-1">Robert Smith Jr.</h1>
+                        <p class="lead text-lg text-muted mb-5"><span class="typing">Coach &amp; Motivator</span></p>
+                        <a href="#calendar" class="btn btn-white btn-lg">My calendar</a><a href="#portfolio" class="btn btn-link btn-lg">My projects</a>
                     </div>
                 </div>
             </div>
@@ -523,46 +89,240 @@
 
     </section>
 
-    <!-- Section - Features -->
-    <section class="section section-lg dark bg-dark" data-scheme="dark">
-
+    <!-- Section - Resume -->
+    <section id="section-resume" data-anchor="resume" class="section" data-scheme="light">
+    
         <!-- Section Content -->
-        <div class="section-content" data-local-scroll>
-            <div class="container image-edge image-edge-close"> 
-                <div class="row">
-                    <div class="col-xl-5 col-md-6">
-                        <!-- Content -->
-                        <h1>Ajax Portfolio</h1>
-                        <p class="lead text-muted">Well prepared ajax portfolio with lazy loading!</p>
-                        <a href="#configurator" class="btn btn-primary">Set your concept!</a>
-                        <!-- Image -->
-                        <div class="image right">
-                            <img src="assets/img/chooser/portfolio.jpg" alt="" class="animated" data-animation="fadeInRight">
-                        </div>
-                    </div>
+        <div class="section-content">
+            <div class="container-slim">
+                <!-- Section Header -->
+                <div class="section-header">
+                    <img src="assets/img/photos/coach/avatar-sm.jpg" alt="" class="section-header-image">
+                    <div class="section-header-content"><span class="typing">Here you will find my resume... </span></div>
                 </div>
-            </div>
-        </div>
-
-    </section>
-
-
-    <!-- Section - Feature-->
-    <section class="section section-lg" data-scheme="light">
-
-        <!-- Section Content -->
-        <div class="section-contentr" data-local-scroll>
-            <div class="container image-edge image-edge-close"> 
-                <div class="row">
-                    <div class="col-xl-5 push-xl-7 col-md-6 push-md-5">
-                        <!-- Content -->
-                        <h1>Advanced Documentation</h1>
-                        <p class="lead text-muted">Useful documentation with all components and intiutive interface.</p>
-                        <a href="documentation/index.html" class="btn btn-primary" target="_blank">Explore documentation</a>
-                        <div class="mt-5 text-xs text-muted"><span class="mr-3">Documentation by</span><a href="http://www.papear.online" target="_blank"><img src="documentation/papear/img/papear-logo.svg" width="70" alt=""></a></div>
+                <!-- Resume - About -->
+                <div class="resume-box">
+                    <p class="lead text-lg">I am experienced coach from Nowy Sacz in Poland - in the busienss since 2008!</p>
+                    <p class="lead mb-5">Through my 5 years of my career I have been working for over 500 clients from all over the World. My speciality is interior and exterior design. I guarentee great communication and quick turnaround.</p>
+                </div>
+                <!-- Resume - Skills -->
+                <div class="resume-box image-edge row">
+                    <div class="col-md-8 push-md-4">
                         <!-- Image -->
                         <div class="image left">
-                            <img src="assets/img/chooser/docs.jpg" alt="" class="animated" data-animation="fadeInLeft">
+                            <img src="assets/img/items/plant2.png" alt="" class="animated" data-animation="fadeInLeft">
+                        </div>
+                        <h5 class="mb-5">Skills &amp; abilities</h5>
+                        <!-- Progress Bar -->
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                        <h6 class="mb-4">Motivation</h6>
+                        <!-- Progress Bar -->
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                        <h6 class="mb-4">Business</h6>
+                        <!-- Progress Bar -->
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                        <h6 class="mb-4">Personality</h6>
+                        <!-- Progress Bar -->
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                        <h6 class="mb-4">Psychology</h6>
+                    </div>
+                </div>
+                <!-- Resume - Education & Jobs -->
+                <div class="resume-box image-edge text-center">
+                    <h5 class="mb-5">Jobs &amp; Education</h5>
+                    <div class="row">
+                        <div class="col-md-10 push-md-1">
+                            <!-- Image -->
+                            <div class="image left">
+                                <img src="assets/img/items/docs.png" alt="" class="animated" data-animation="fadeInLeft">
+                            </div>
+                            <!-- Image -->
+                            <div class="image right">
+                                <img src="assets/img/items/glasses2.png" alt="" class="animated" data-animation="fadeInRight"> 
+                            </div>
+                            <!-- Timeline -->
+                            <div class="timeline">
+                                <!-- Timeline Event -->
+                                <div class="timeline-event">
+                                    <div class="timeline-event-point"></div>
+                                    <div class="timeline-event-date">10.2011 - 09.2014</div>
+                                    <div class="timeline-event-content">
+                                        <h5 class="timeline-event-title">Psychology</h5>
+                                        <span class="timeline-event-caption text-muted">University of Oxford</span>
+                                    </div>
+                                </div>
+                                <!-- Timeline Event -->
+                                <div class="timeline-event">
+                                    <div class="timeline-event-point"></div>
+                                    <div class="timeline-event-date">11.2014 - 09.2016</div>
+                                    <div class="timeline-event-content">
+                                        <h5 class="timeline-event-title">School Psychologist</h5>
+                                        <span class="timeline-event-caption text-muted">High-School</span>
+                                    </div>
+                                </div>
+                                <!-- Timeline Event -->
+                                <div class="timeline-event">
+                                    <div class="timeline-event-point"></div>
+                                    <div class="timeline-event-date">09.2016 - 04.2017</div>
+                                    <div class="timeline-event-content">
+                                        <img src="assets/img/logotypes/envato.svg" width="90" class="mb-4" alt="">
+                                        <h5 class="timeline-event-title">Coach</h5>
+                                        <span class="timeline-event-caption text-muted">Freelancer</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Resume - Languages -->
+                <div class="resume-box image-edge row">
+                    <div class="col-md-7">
+                        <!-- Image -->
+                        <div class="image right">
+                            <img src="assets/img/items/book.png" alt="" class="animated" data-animation="fadeInRight">
+                        </div>
+                        <h5 class="mb-5">Languages</h5>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <!-- Chart -->
+                                <div class="single-chart">
+                                    <div class="chart" data-bar-color="#CE3232" data-track-color="#EEEEEE" data-percent="100">
+                                        <div class="chart-content">
+                                            <span class="value"><span>5</span>/5</span>
+                                            <h6 class="title">Polish</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <!-- Chart -->
+                                <div class="single-chart">
+                                    <div class="chart" data-bar-color="#CE3232" data-track-color="#EEEEEE" data-percent="80">
+                                        <div class="chart-content">
+                                            <span class="value"><span>4</span>/5</span>
+                                            <h6 class="title">English</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <!-- Chart -->
+                                <div class="single-chart">
+                                    <div class="chart" data-bar-color="#CE3232" data-track-color="#EEEEEE" data-percent="40">
+                                        <div class="chart-content">
+                                            <span class="value"><span>2</span>/5</span>
+                                            <h6 class="title">German</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <!-- Chart -->
+                                <div class="single-chart">
+                                    <div class="chart" data-bar-color="#CE3232" data-track-color="#EEEEEE" data-percent="20">
+                                        <div class="chart-content">
+                                            <span class="value"><span>1</span>/5</span>
+                                            <h6 class="title">Spanish</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Resume - Hobbies & Interests -->
+                <div class="resume-box image-edge text-center">
+                    <h5 class="mb-5">Hobbies &amp; Interests</h5>
+                    <!-- Image -->
+                    <div class="image left">
+                        <img src="assets/img/items/camera.png" alt="" class="animated" data-animation="fadeInLeft">
+                    </div>
+                    <!-- Hobby -->
+                    <div class="hobby">
+                        <div class="hobby-image">
+                            <div class="bg-image-container"><img src="assets/img/photos/hobby01.jpg" alt=""></div>
+                        </div>
+                        <div class="hobby-image-hover">
+                            <div class="bg-image-container"><img src="assets/img/photos/hobby01-hover.jpg" alt=""></div>
+                        </div>
+                        <div class="hobby-body">
+                            <div class="hobby-content">
+                                <h4 class="hobby-title">Motocross</h4>
+                                <span class="hobby-caption">Speed &amp; Adrenaline</span>
+                            </div>
+                            <button class="hobby-btn btn btn-youtube btn-sm"><i class="fa fa-youtube"></i>Check my YouTube</button>
+                        </div>
+                    </div>
+                    <!-- Hobby -->
+                    <div class="hobby">
+                        <div class="hobby-image">
+                            <div class="bg-image-container"><img src="assets/img/photos/hobby02.jpg" alt=""></div>
+                        </div>
+                        <div class="hobby-image-hover">
+                            <div class="bg-image-container"><img src="assets/img/photos/hobby02-hover.jpg" alt=""></div>
+                        </div>
+                        <div class="hobby-body">
+                            <div class="hobby-content">
+                                <h4 class="hobby-title">Music</h4>
+                                <span class="hobby-caption">Speed &amp; Adrenaline</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Hobby -->
+                    <div class="hobby">
+                        <div class="hobby-image">
+                            <div class="bg-image-container"><img src="assets/img/photos/hobby03.jpg" alt=""></div>
+                        </div>
+                        <div class="hobby-image-hover">
+                            <div class="bg-image-container"><img src="assets/img/photos/hobby03-hover.jpg" alt=""></div>
+                        </div>
+                        <div class="hobby-body">
+                            <div class="hobby-content">
+                                <h4 class="hobby-title">Snowboard</h4>
+                                <span class="hobby-caption">Speed &amp; Adrenaline</span>
+                            </div>
+                            <button class="hobby-btn btn btn-instagram btn-sm"><i class="fa fa-instagram"></i>Check my Instagram</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Resume - Clients -->
+                <div class="resume-box image-edge text-center">
+                    <h5 class="mb-5">My Clients</h5>
+                    <div class="row">
+                        <div class="col-md-10 push-md-1">
+                            <ul class="spread-images">
+                                <li><a href="#"><img src="assets/img/logotypes/suelo.svg" alt="" class="gray-to-color"></a></li>
+                                <li><a href="#"><img src="assets/img/logotypes/envato.svg" alt="" class="gray-to-color"></a></li>
+                                <li><a href="#"><img src="assets/img/logotypes/html.svg" alt="" class="gray-to-color"></a></li>
+                                <li><a href="#"><img src="assets/img/logotypes/sass.svg" alt="" class="gray-to-color"></a></li>
+                            </ul>
+                            <div id="logotypes-more" class="collapse">
+                                <ul class="spread-images">
+                                    <li><a href="#"><img src="assets/img/logotypes/grunt.svg" alt="" class="gray-to-color"></a></li>
+                                    <li><a href="#"><img src="assets/img/logotypes/css.svg" alt="" class="gray-to-color"></a></li>
+                                    <li><a href="#"><img src="assets/img/logotypes/sketch.svg" alt="" class="gray-to-color"></a></li>
+                                </ul>
+                            </div>
+                            <button data-toggle="collapse" data-target="#logotypes-more" class="btn btn-toggle btn-primary btn-sm mt-4" aria-expanded="false">
+                                <span>View more</span>
+                                <span>View less</span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -571,33 +331,495 @@
 
     </section>
 
+    <!-- Section - Testimonials -->
+    <section id="section-testimonials" data-anchor="testimonials" class="section bg-primary-animated dark" data-scheme="dark">
+    
+        <!-- Section Content -->
+        <div class="section-content">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="section-header">
+                    <img src="assets/img/photos/coach/avatar-sm.jpg" alt="" class="section-header-image">
+                    <div class="section-header-content">
+                        <span class="typing">Look what my clients think about me…</span>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <!-- Testimonial -->
+                        <div class="testimonial">
+                            <p class="testimonial-content">Really solid person and great teammate!</p>
+                            <div class="testimonial-author">
+                                <img src="assets/img/avatars/avatar01.jpg" alt="" class="testimonial-author-image">
+                                <div class="testimonial-author-content">
+                                    <h6 class="name">Poul McCartney</h6>
+                                    <span class="caption">Smashing Magazine</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <!-- Testimonial -->
+                        <div class="testimonial">
+                            <p class="testimonial-content">Great skills, quick turnaround and awesome skill skills. 100% recommended!</p>
+                            <div class="testimonial-author">
+                                <img src="assets/img/avatars/avatar02.jpg" alt="" class="testimonial-author-image">
+                                <div class="testimonial-author-content">
+                                    <h6 class="name">Poul McCartney</h6>
+                                    <span class="caption">Smashing Magazine</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <!-- Testimonial -->
+                        <div class="testimonial">
+                            <p class="testimonial-content">Very creative person - Marucs has added lots of magic to our startup!</p>
+                            <div class="testimonial-author">
+                                <img src="assets/img/avatars/avatar03.jpg" alt="" class="testimonial-author-image">
+                                <div class="testimonial-author-content">
+                                    <h6 class="name">Poul McCartney</h6>
+                                    <span class="caption">Smashing Magazine</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <!-- Testimonial -->
+                        <div class="testimonial">
+                            <p class="testimonial-content">He does awesome work with my family will!</p>
+                            <div class="testimonial-author">
+                                <img src="assets/img/avatars/avatar04.jpg" alt="" class="testimonial-author-image">
+                                <div class="testimonial-author-content">
+                                    <h6 class="name">Poul McCartney</h6>
+                                    <span class="caption">Smashing Magazine</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Section - Services -->
+    <section id="section-services" data-anchor="services" class="section section-slider fullheight" data-scheme="light">
+
+        <!-- Section Content -->
+        <div class="section-content">
+            <div class="container-wide">
+                <!-- Section Header -->
+                <div class="section-header">
+                    <img src="assets/img/photos/coach/avatar-sm.jpg" alt="" class="section-header-image">
+                    <div class="section-header-content"><span class="typing">What can I do for you?</span></div>
+                </div>
+            </div>
+            <!-- Slides -->
+            <div class="container-wide">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="section-slides nav outer-controls" data-local-scroll>
+                            <!-- Slide -->
+                            <div class="slide light">
+                                <h2 class="display-4">Motivation Courses</h2>
+                                <p class="lead text-muted">In massa nulla, blandit vel felis at, tincidunt scelerisque enim. Mauris ut orci diam.</p>
+                                <a href="#calendar" class="btn btn-primary">Calendar</a>
+                            </div>
+                            <!-- Slide -->
+                            <div class="slide dark">
+                                <h2 class="display-4">Business Courses</h2>
+                                <p class="lead text-muted">Blandit vel felis at, tincidunt scelerisque enim. Mauris ut orci diam.</p>
+                                <a href="#calendar" class="btn btn-primary">Calendar</a>
+                            </div>
+                            <!-- Slide -->
+                            <div class="slide light">
+                                <h2 class="display-4">Personal growth </h2>
+                                <p class="lead text-muted">Blandit vel felis at, tincidunt scelerisque enim. Mauris ut orci diam.</p>
+                                <a href="#contact" class="btn btn-primary">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section Backgrounds -->
+        <div class="section-bgs">
+            <div class="slide bg-light">
+                <div class="image col-md-6 push-md-6">
+                    <div class="bg-image-container">
+                        <img src="assets/img/photos/coach/service01.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="slide bg-dark">
+                <div class="image col-md-6 push-md-6">
+                    <div class="bg-image-container">
+                        <img src="assets/img/photos/coach/service02.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="slide bg-light">
+                <div class="image col-md-6 push-md-6">
+                    <div class="bg-image-container">
+                        <img src="assets/img/photos/coach/service03.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Section - Portfolio -->
+    <section id="section-portfolio" data-anchor="portfolio" class="section bg-primary-animated dark pb-0" data-scheme="dark">
+    
+        <!-- Section Content -->
+        <div class="section-content">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="section-header">
+                    <img src="assets/img/photos/coach/avatar-sm.jpg" alt="" class="section-header-image">
+                    <div class="section-header-content">
+                        <span class="typing">Check out my latest projects...</span>
+                        <div class="section-header-caption show-after-typing222"> 
+                            <div class="module" data-local-scroll>
+                                <span class="mr-2">Wan't to take a part?</span>
+                                <a href="#calendar" class="btn btn-white btn-sm">Check my calendar!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Carousel -->
+            <div class="row no-gutters carousel inner-controls" data-local-scroll data-slick='{
+                "slidesToShow": 3, 
+                "slidesToScroll": 1,
+                "dots": false,
+                "arrows": true,
+                "responsive": [
+                    {
+                        "breakpoint": 991,
+                        "settings": {
+                            "slidesToShow": 2
+                        }
+                    },
+                    {
+                        "breakpoint": 575,
+                        "settings": {
+                            "slidesToShow": 1
+                        }
+                    }
+                ]
+                }'>
+                <div class="carousel-item">    
+                    <!-- Image Box -->
+                    <figure class="image-box inner-title">
+                        <div class="image">
+                            <a href="case-study-coach.html" data-toggle="ajax-modal">
+                                <img src="assets/img/projects/project01.jpg" alt="">
+                                <img src="assets/img/projects/project01-hover.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="content text-center">
+                            <h5 class="title"><a href="case-study-coach.html" data-toggle="ajax-modal">Being yourself</a></h5>
+                            <span class="caption text-muted">Medical Support</span>
+                        </div>
+                    </figure>
+                </div>
+                <div class="carousel-item">    
+                    <!-- Image Box -->
+                    <figure class="image-box inner-title">
+                        <div class="image">
+                            <a href="case-study-coach.html" data-toggle="ajax-modal">
+                                <img src="assets/img/projects/project02.jpg" alt="">
+                                <img src="assets/img/projects/project02-hover.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="content text-center">
+                            <h5 class="title"><a href="case-study-coach.html" data-toggle="ajax-modal">Workspace</a></h5>
+                            <span class="caption text-muted">Surgery</span>
+                        </div>
+                    </figure>
+                </div>
+                <div class="carousel-item">    
+                    <!-- Image Box -->
+                    <figure class="image-box inner-title">
+                        <div class="image">
+                            <a href="case-study-coach.html" data-toggle="ajax-modal">
+                                <img src="assets/img/projects/project03.jpg" alt="">
+                                <img src="assets/img/projects/project03-hover.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="content text-center">
+                            <h5 class="title"><a href="case-study-coach.html" data-toggle="ajax-modal">Stay Active!</a></h5>
+                            <span class="caption text-muted">Surgery</span>
+                        </div>
+                    </figure>
+                </div>
+                <div class="carousel-item">    
+                    <!-- Image Box -->
+                    <figure class="image-box inner-title">
+                        <div class="image">
+                            <a href="case-study-coach.html" data-toggle="ajax-modal">
+                                <img src="assets/img/projects/project04.jpg" alt="">
+                                <img src="assets/img/projects/project04-hover.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="content text-center">
+                            <h5 class="title"><a href="case-study-coach.html" data-toggle="ajax-modal">Close to Nature</a></h5>
+                            <span class="caption text-muted">Medical Support</span>
+                        </div>
+                    </figure>
+                </div>
+                <div class="carousel-item">    
+                    <!-- Image Box -->
+                    <figure class="image-box inner-title">
+                        <div class="image">
+                            <a href="case-study-coach.html" data-toggle="ajax-modal">
+                                <img src="assets/img/projects/project05.jpg" alt="">
+                                <img src="assets/img/projects/project05-hover.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="content text-center">
+                            <h5 class="title"><a href="case-study-coach.html" data-toggle="ajax-modal">Concrete Jungle</a></h5>
+                            <span class="caption text-muted">Surgery</span>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Section - Calendar -->
+    <section id="section-calendar" data-anchor="calendar" class="section bg-light" data-scheme="light">
+    
+        <!-- Section Content -->
+        <div class="section-content">
+            <div class="container image-edge image-edge-close">
+                <!-- Section Header -->
+                <div class="section-header">
+                    <img src="assets/img/photos/coach/avatar-sm.jpg" alt="" class="section-header-image">
+                    <div class="section-header-content"><span class="typing">Check out my calendar!</span></div>
+                </div>
+                <!-- Calendar -->
+                <div class="calendar-container">
+                    <button class="btn-calendar-nav prev"><i class="fa fa-angle-left"></i></button>
+                    <div id="calendar-component"></div>
+                    <button class="btn-calendar-nav next"><i class="fa fa-angle-right"></i></button>
+                </div>
+                <!-- Image -->
+                <div class="image left">
+                    <img src="assets/img/items/docs.png" alt="" class="animated" data-animation="fadeInLeft">
+                </div>
+                <!-- Image -->
+                <div class="image right">
+                    <img src="assets/img/items/glasses2.png" alt="" class="animated" data-animation="fadeInRight"> 
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Section - Blog -->
+    <section id="section-blog" data-anchor="blog" class="section" data-scheme="light">
+    
+        <!-- Section Content -->
+        <div class="section-content">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="section-header">
+                    <img src="assets/img/photos/coach/avatar-sm.jpg" alt="" class="section-header-image">
+                    <div class="section-header-content">
+                        <span class="typing">Some of my latest posts… Wan't more?</span>
+                        <div class="section-header-caption show-after-typing">
+                            <a href="blog-panel.html" class="btn btn-outline-primary btn-sm">Check out my blog</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row masonry">  
+                    <div class="masonry-sizer col-xl-4 col-sm-6 col-12"></div>
+                    <div class="masonry-item col-xl-4 col-sm-6 col-12">
+                        <!-- Post - Item -->
+                        <article class="post item">
+                            <div class="post-image">
+                                <a href="blog-post-panel.html"><img src="assets/img/posts/post01.jpg" alt=""></a>
+                                <button class="btn-play" data-toggle="video-modal" data-target="#modalVideo" data-video="https://www.youtube.com/embed/uVju5--RqtY"></button>
+                            </div>
+                            <div class="post-content">
+                                <h4 class="post-title"><a href="blog-post-panel.html">Perfect Nature</a></h4>
+                                <ul class="post-meta">
+                                    <li><a href="#">24 July 2017</a></li>
+                                    <li><a href="#">Lifestyle</a></li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="masonry-item col-xl-4 col-sm-6 col-12">
+                        <!-- Post - Item -->
+                        <article class="post item">
+                            <div class="post-image">
+                                <a href="blog-post-panel.html"><img src="assets/img/posts/post03.jpg" alt=""></a>
+                            </div>
+                            <div class="post-content">
+                                <h4 class="post-title"><a href="blog-post-panel.html">How to work more effective?</a></h4>
+                                <ul class="post-meta">
+                                    <li><a href="#">24 July 2017</a></li>
+                                    <li><a href="#">Work</a></li>
+                                </ul>
+                                <p>Proin pulvinar massa neque, vel sodales augue aliquet placerat. Sed consequat commodo magna ac luctus.</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="masonry-item col-xl-4 col-sm-6 col-12">
+                        <!-- Post - Item -->
+                        <article class="post item">
+                            <div class="post-image">
+                                <a href="blog-post-panel.html"><img src="assets/img/posts/post02.jpg" alt=""></a>
+                            </div>
+                            <div class="post-content">
+                                <h4 class="post-title"><a href="blog-post-panel.html">Great workspace idas</a></h4>
+                                <ul class="post-meta">
+                                    <li><a href="#">24 July 2017</a></li>
+                                    <li><a href="#">Lifestyle</a></li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="masonry-item col-xl-4 col-sm-6 col-12">
+                        <!-- Post - Item -->
+                        <article class="post item">
+                            <div class="post-image">
+                                <a href="blog-post-panel.html"><img src="assets/img/posts/post04.jpg" alt=""></a>
+                            </div>
+                            <div class="post-content">
+                                <h4 class="post-title"><a href="blog-post-panel.html">Road trip to Colorado</a></h4>
+                                <ul class="post-meta">
+                                    <li><a href="#">24 July 2017</a></li>
+                                    <li><a href="#">Lifestyle</a></li>
+                                </ul>
+                                <p>Sed consequat commodo magna ac luctus. Vel sodales augue aliquet placerat. </p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="masonry-item col-xl-4 col-sm-6 col-12">
+                        <!-- Blockquote -->
+                        <blockquote class="blockquote bg-dark dark">
+                            <div class="bg-image-container"><img src="assets/img/photos/coach/blockquote01.jpg" alt=""></div>
+                            <p>Vel sodales augue aliquet placerat. Sed consequat commodo magna ac luctus.</p>
+                            <footer class="text-muted"><span class="name">Mary Jane, The Founder</span></footer>
+                        </blockquote>
+                    </div>
+                    <div class="masonry-item col-xl-4 col-sm-6 col-12">
+                        <!-- Post - Item -->
+                        <article class="post item">
+                            <div class="post-content">
+                                <h4 class="post-title"><a href="blog-post-panel.html">Hello world!</a></h4>
+                                <ul class="post-meta">
+                                    <li><a href="#">24 July 2017</a></li>
+                                    <li><a href="#">Lifestyle</a></li>
+                                </ul>
+                                <p>Vel sodales augue aliquet placerat. Sed consequat commodo magna ac luctus.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="text-center mt-3">
+                    <a href="blog-panel.html" class="btn btn-outline-primary">Check out my blog</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Section - Contact -->
+    <section id="section-contact" data-anchor="contact" class="section section-contact fullheight bg-dark dark" data-scheme="dark">
+
+        <!-- BG Map -->
+        <div id="google-map" class="bg-map bg-map-overlay dark" data-latitude="40.758895" data-longitude="-73.985131" data-style="grayscale"></div>
+    
+        <!-- Section Content -->
+        <div class="section-content pos-v-center">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="section-header">
+                    <img src="assets/img/photos/coach/avatar-sm.jpg" alt="" class="section-header-image">
+                    <div class="section-header-content">
+                        <span class="typing">Stay in touch with me!</span>
+                        <div class="section-header-caption show-after-typing222">   
+                            <div class="module">
+                                <span class="mr-2">Where am I located?</span>
+                                <label class="selector">
+                                    <input type="checkbox" class="selector-input" data-toggle="contact-map">
+                                    <span class="selector-indicator"></span>
+                                </label>
+                            </div>
+                            <div class="module">
+                                <span class="mr-2">Have a question?</span>
+                                <a href="mailto:example@mail.com" class="btn btn-outline-primary btn-sm">Write to me!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Section Contact -->
+                <div class="row section-contact-content pt-lg-5 pb-lg-5">
+                    <div class="col-md-4">
+                        <h6 class="text-muted mb-2">Address:</h6>
+                        <address class="lead">
+                            1111-A Nowhere Lane,<br>
+                            Outta Sight,<br>
+                            State 90378, USA
+                        </address>
+                    </div>
+                    <div class="col-md-4">
+                        <h6 class="text-muted mb-2">E-mail:</h6>
+                        <p class="mb-5"><a href="#" class="lead link-inherit">example@mail.com</a></p>
+                        <h6 class="text-muted mb-2">Phone:</h6>
+                        <a href="#" class="lead link-inherit">+48 599 102 000</a>
+                    </div>
+                    <div class="col-md-4">
+                        <h6 class="text-muted mb-2">Skype:</h6>
+                        <p class="mb-5"><a href="#" class="lead link-inherit">example.username</a></p>
+                        <h6 class="text-muted mb-2">Find me on:</h6>
+                        <a href="https://www.facebook.com/suelopl/" target="_blank" class="icon icon-circle icon-hover icon-sm icon-facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="https://twitter.com/suelopl" target="_blank" class="icon icon-circle icon-hover icon-sm icon-twitter"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/piotr-osmoła-2b69ba59/" target="_blank" class="icon icon-circle icon-hover icon-sm icon-linkedin"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="section bg-dark dark fp-auto-height">
+
+        <div class="footer-content">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 mb-5 mb-md-0 text-center text-md-left">
+                        <p class="mb-2"><span class="typing">Would you like to get my CV in PDF?</span></p>
+                        <a href="#" class="btn btn-primary btn-sm">Download my CV</a>
+                    </div>
+                    <div class="spread-icons col-md-6 text-center text-md-right">
+                        <a href="https://www.facebook.com/suelopl/" target="_blank" class="icon icon-sm icon-white icon-hover"><i class="fa fa-facebook"></i></a>
+                        <a href="https://twitter.com/suelopl" target="_blank" class="icon icon-sm icon-white icon-hover"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/piotr-osmoła-2b69ba59/" target="_blank" class="icon icon-sm icon-white icon-hover"><i class="fa fa-linkedin"></i></a>
+                        <p class="text-muted mt-3 mb-0">Copyright Johnatan Doe 2017©. <br>
+                        Made with love by <a href="http://suelo.pl" target="_blank" class="link-inherit">Suelo</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- Footer / End -->
 
 </div>
 <!-- Content / End -->
-
-<!-- Footer -->
-<footer id="footer" class="bg-dark dark">
-
-    <div class="footer-content">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 mb-5 mb-md-0 text-center text-md-left">
-                    <p class="mb-2"><span class="typing">Need a designer and front-end developer?</span></p>
-                    <a href="http://www.suelo.pl" target="_blank" class="btn btn-primary btn-sm">Hire me now!</a>
-                </div>
-                <div class="spread-icons col-md-6 text-center text-md-right">
-                    <a href="https://www.facebook.com/suelopl/" target="_blank" class="icon icon-sm icon-white icon-hover"><i class="fa fa-facebook"></i></a>
-                    <a href="https://twitter.com/suelopl" target="_blank" class="icon icon-sm icon-white icon-hover"><i class="fa fa-twitter"></i></a>
-                    <a href="https://www.linkedin.com/in/piotr-osmoła-2b69ba59/" target="_blank" class="icon icon-sm icon-white icon-hover"><i class="fa fa-linkedin"></i></a>
-                    <p class="text-muted mt-3 mb-0">Copyright Johnatan Doe 2017©. <br>
-                    Made with love by <a href="http://suelo.pl" target="_blank" class="link-inherit">Suelo</a>.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-</footer>
-<!-- Footer / End -->
 
 <!-- Window - Message -->
 <div id="message-window" class="window window-primary">
@@ -608,16 +830,16 @@
                 <div class="container">
                     <!-- Section Header -->
                     <div class="section-header">
-                        <img src="assets/img/photos/developer/avatar-sm.jpg" alt="" class="section-header-image">
+                        <img src="assets/img/photos/coach/avatar-sm.jpg" alt="" class="section-header-image">
                         <div class="section-header-content">
-                            <span class="typing">Hello! How can I help you?</span>
+                            <span class="typing">I am waiting for a message from you :)</span>
                         </div>
                     </div>
                     <!-- Section Content -->
-                    <form id="contact-form-suelo" class="form-text"
+                    <form class="contact-form form-text"
                     data-message-error="Opps... Something went wrong - please try again later"
                     data-message-success="Thanks! You will recieve a responsve in 24h!" data-validate>
-                        <div class="form-group">Hello! My name is <input name="name" type="text" class="form-control-text" required> and I have got a question about this template:</div>
+                        <div class="form-group">Hello! My name is <input name="name" type="text" class="form-control-text" required> and here is my message:</div>
                         <div class="form-group"><textarea name="message" cols="30" rows="4" class="form-control-text" required></textarea></div>
                         <div class="form-group">I will left you my e-mail - please reply: <input name="email" type="email" class="form-control-text" required></div>
                         <button class="btn btn-white btn-lg">Send message!</button>
@@ -657,15 +879,17 @@
 <script src="assets/plugins/easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
 <script src="assets/plugins/snapsvg/dist/snap.svg-min.js"></script>
 <script src="assets/plugins/isotope-layout/dist/isotope.pkgd.min.js"></script>
+<script src="assets/plugins/moment/min/moment.min.js"></script>
+<script src="assets/plugins/fullcalendar/dist/fullcalendar.min.js"></script>
+<script src="assets/plugins/fullcalendar/dist/gcal.min.js"></script>
+<script src="assets/plugins/fullpage.js/vendors/scrolloverflow.min.js"></script>
+<script src="assets/plugins/fullpage.js/dist/jquery.fullpage.min.js"></script>
 
 <!-- JS Google Map -->
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRMEkSrFLFkLKHyLVwT0DLLTqcUhUUZdM"></script>
 
 <!-- JS Core -->
 <script src="assets/js/core.js"></script>
-
-<!-- JS Configurarot -->
-<script src="assets/js/configurator.js"></script>
 
 </body>
 
